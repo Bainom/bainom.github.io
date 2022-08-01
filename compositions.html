@@ -1,0 +1,102 @@
+<!-- Oh Hai! Couldn't help yourself from taking a peek, huh? -->
+
+<!-- All credit for the animation goes to https://github.com/ertdfgcvb/play.core & used here per the apache license 2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sebastian Obel</title>
+		<style type="text/css" media="screen">
+			html, body {
+				padding: 0;
+				margin: 0;
+				font-size: 1em;
+				line-height: 1.2;
+				font-family: 'Iosevka', monospace;
+			}
+			pre {
+				position: absolute;
+				margin:0;
+				padding:0;
+				left: 0;;
+				top:0;
+				width:100vw;
+				height:100vh;
+				font-family: inherit;
+      }
+      .heading {
+        position: absolute;
+        width:100vw;
+				margin:0;
+				padding:0;
+				left: 100px;;
+				top:0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .heading p:first-child {
+        margin-left: 1em;
+      }
+      .heading p:nth-child(2) {
+        margin-right: 1em;
+      }
+
+      a:hover {
+        color: #ff00ff;
+      }
+		</style>
+	
+	<body>
+        <div style="z-index:100; position: relative;">silvercry</p>
+			
+			<audio controls>
+					<source src="Silvercry.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio> 
+		</div>
+
+		<div style="z-index:100; position: relative;">waiting while it rains</p>
+			<audio controls>
+					<source src="Waiting in the rain.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio> 
+		</div>
+
+		<div style="z-index:100; position: relative;">hammond flavor</p>
+			<audio controls>
+					<source src="Hammond Flavor.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio> 
+		</div>
+
+		<div style="z-index:100; position: relative;">melodram</p>
+			<audio controls>
+					<source src="melodram.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio> 
+		</div>
+
+		<div style="z-index:100; position: relative;">analog empathy</p>
+			<audio controls>
+					<source src="Analog Empathi.mp3" type="audio/mpeg">
+				  Your browser does not support the audio element.
+				  </audio> 
+		</div>
+		<pre></pre>
+		<script type="module">
+		import { run } from './src/run.js'
+		import * as program from './src/ernst.js'
+			run(program, { element : document.querySelector('pre') }).then(function(e){
+				console.log(e)
+			}).catch(function(e) {
+				console.warn(e.message)
+				console.log(e.error)
+			})
+		</script>
+	</body>
+</html>
