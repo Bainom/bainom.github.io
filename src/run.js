@@ -39,13 +39,15 @@ const CSSStyles = [
   'textAlign',
 ];
 
+const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+
 // Program runner.
 // Takes a program object (usually an imported module),
 // and some optional settings (see above) as arguments.
 // Finally, an optional userData object can be passed which will be available
 // as last parameter in all the module functions.
 // The program object should export at least a main(), pre() or post() function.
-export function run(program, runSettings, userData = {}) {
+export function run(program, runSettings, userData = {randomColor}) {
   // Everything is wrapped inside a promise;
   // in case of errors in ‘program’ it will reject without reaching the bottom.
   // If the program reaches the bottom of the first frame the promise is resolved.

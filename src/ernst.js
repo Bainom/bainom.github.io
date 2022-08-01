@@ -20,7 +20,7 @@ function polygon(center, edges, time) {
   return smoothstep(0.3, 0.31, c);
 }
 
-export function main(coord, context, cursor, buffer) {
+export function main(coord, context, cursor, buffer, userData) {
   const m = max(context.cols, context.rows);
   const a = context.metrics.aspect;
 
@@ -40,7 +40,7 @@ export function main(coord, context, cursor, buffer) {
   const i = triangle + quadrato;
   const chars = [' ', 'e', 'o', 'ö'];
 
-  const colors = ['white', 'black', '#A9A9A9', '#4169E1'];
+  const colors = ['white', 'black', '#A9A9A9', userData.randomColor];
   return {
     char: chars[i],
     color: colors[i],
