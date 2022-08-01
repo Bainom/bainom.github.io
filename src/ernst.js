@@ -38,7 +38,7 @@ export function main(coord, context, cursor, buffer, userData) {
   const colorQ = polygon(centerQ, 4, -context.time * 0.0004);
   const quadrato = colorQ <= 0.1 ? 2 : 0;
   const i = triangle + quadrato;
-  const chars = [' ', 'e', 'o', 'ö'];
+  const chars = [' ', 's', 'o', 'e'];
 
   const colors = ['white', 'black', '#A9A9A9', userData.randomColor];
   return {
