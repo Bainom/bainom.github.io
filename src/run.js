@@ -39,7 +39,14 @@ const CSSStyles = [
   'textAlign',
 ];
 
-const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+
+// randome-->const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
+
+// Todo:
+// 1. create a new array with color codes
+// 2. change below to pick randonly one value from that array.
+const Color = ['#306EFF', '#16E2F5', '#00A36C', '#FFDF00', '#FFA500', '#F52887'];
+const randomColor = Color[Math.floor(Math.random() * Color.length)];
 
 // Program runner.
 // Takes a program object (usually an imported module),
