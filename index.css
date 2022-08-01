@@ -1,0 +1,65 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2;
+  font-family: 'Iosevka', monospace;
+}
+pre {
+  position: absolute;
+  margin:0;
+  padding:0;
+  left:0;
+  top:0;
+  width:100vw;
+  height:100vh;
+  font-family: inherit;
+}
+.heading {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  margin-left: 1em;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.links a {
+  margin-right: 1em;
+}
+
+a:hover {
+  color: #ff00ff;
+}
+
+a, a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #ff00ff;
+  text-decoration: double underline;
+}
+
+.songs-container {
+  z-index: 1;
+  position: relative;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.song {
+  margin-top: 1.5em;
+}
+
+.song p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}

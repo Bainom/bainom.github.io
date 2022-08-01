@@ -39,16 +39,17 @@ const CSSStyles = [
   'textAlign',
 ];
 
+// const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
 
-// randome-->const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-
-// Todo:
-// 1. create a new array with color codes
-// 2. change below to pick randonly one value from that array.
-const Color = ['#306EFF', '#16E2F5', '#00A36C', '#FFDF00', '#FFA500', '#F52887'];
-const randomColor = Color[Math.floor(Math.random() * Color.length)];
-
-
+const color = [
+  '#306EFF',
+  '#16E2F5',
+  '#00A36C',
+  '#FFDF00',
+  '#FFA500',
+  '#F52887',
+];
+const randomColor = color[Math.floor(Math.random() * color.length)];
 
 // Program runner.
 // Takes a program object (usually an imported module),
@@ -56,7 +57,7 @@ const randomColor = Color[Math.floor(Math.random() * Color.length)];
 // Finally, an optional userData object can be passed which will be available
 // as last parameter in all the module functions.
 // The program object should export at least a main(), pre() or post() function.
-export function run(program, runSettings, userData = {randomColor}) {
+export function run(program, runSettings, userData = { randomColor }) {
   // Everything is wrapped inside a promise;
   // in case of errors in ‘program’ it will reject without reaching the bottom.
   // If the program reaches the bottom of the first frame the promise is resolved.
