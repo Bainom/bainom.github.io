@@ -50,6 +50,11 @@ const color = [
   '#F52887',
 ];
 const randomColor = color[Math.floor(Math.random() * color.length)];
+//Button to change color
+
+
+
+
 
 // Program runner.
 // Takes a program object (usually an imported module),
