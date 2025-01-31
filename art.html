@@ -1,0 +1,159 @@
+<!-- Oh Hai! Couldn't help yourself from taking a peek, huh? -->
+
+<!-- All credit for the animation goes to https://github.com/ertdfgcvb/play.core & used here per the apache license 2.0 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+
+	.video-container {
+		display: flex; /* Display the videos next to each other */
+		align-items: center; /* Align the videos vertically to the same height */
+	}
+
+	.video-container .song {
+		margin: 10px; /* Optional: Add some margin */
+	}
+
+	.video-container video {
+		height: 200px; /* Set a fixed height */
+		width: auto; /* Let the width adjust automatically based on the video's aspect ratio */
+	}
+
+	.row {
+	  display: -ms-flexbox; /* IE10 */
+	  display: flex;
+	  -ms-flex-wrap: wrap; /* IE10 */
+	  flex-wrap: wrap;
+	  padding: 0 4px;
+	}
+	
+	/* Create four equal columns that sits next to each other */
+	.column {
+	  -ms-flex: 30%; /* IE10 */
+	  flex: 30%;
+	  max-width: 30%;
+	  padding: 0 4px;
+	}
+	
+	.column img {
+	  margin-top: 8px;
+	  vertical-align: middle;
+	  width: 100%;
+	}
+	
+	/* Responsive layout - makes a two column-layout instead of four columns */
+	@media screen and (max-width: 800px) {
+	  .column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	  }
+	}
+	
+	/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 600px) {
+	  .column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	  }
+	}
+	</style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sebastian obel</title>
+		<link rel="stylesheet" type="text/css" href="./index.css">
+	</head>
+	<body>
+    <div class="heading">
+      <p class="name">sebastian obel</p>
+      <div class="links">
+				<a href="./portfolio.html">portfolio</a>
+				<a href="./compositions.html">compositions</a>
+				<a href="./index.html">home</a>
+			</div>
+		</div>
+		<div class="row"> 
+
+			<p> swarm of sound invites participants to immerse themselves in a dynamic auditory environment where sound and its origin within the space are influenced 
+				by the movement and collective interactions of those present.
+			the inspiration for this piece is rooted in my own neurodiversity. i experiences overstimulation in loud, 
+			crowded environments and find under-stimulating spaces equally challenging. this installation strikes a balance,
+			 providing a dynamic environment that responds to the natural human desire for movement and interaction.</p>
+			
+			<p> the installation emphasizes the philosophy that art is co-created with its audience, 
+				inspiring visitors to explore and discover new patterns and experiences. despite intentionally limiting the use of professional video and audio equipment, 
+				the installation utilizes minimal and open source tools to create a profound and memorable impact. 
+				these constraints not only enhance the creative process but also broaden the installation’s scope for making it accessible to a diverse range of communities.
+
+				i had the chance to present my work at <a href="https://www.alte-muenze-berlin.de/" target="_blank">Alte Münze</a> in berlin during their open door event sommermünze from the 07.09.24 - 08.09.24.</p>
+
+			<p> the conceptualisation design and the technical development in its entirety was part of my bachelor thesis. 
+				the installation runs on two single board computers using an RPI 4 running a custom camera based object tracking algorithm in python	 without the use of any deep learning models. 
+				The Sound design, 360 degree panning and digital to analog conversion is handled by the bela + CTAG cap running pure data. </p>
+				</div>
+
+			<div class="video-container">
+				<!-- <div class="song">
+					<video controls>
+						<source src="sos_video_1.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+
+				</div>			 -->
+				<div class="song">
+
+					<video controls>
+						<source src="sos_video_2.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<!-- <div class="song">
+
+					<video controls>
+						<source src="sos_video_4.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div> -->
+				<div class="song">
+
+					<video controls>
+						<source src="sos_video_3.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+
+	<!-- Photo Grid -->
+	<div class="row"> 
+		<div class="column">
+		<p> --------------</p>
+		<img src="/img/IMG_a1.JPG" style="width:100%">
+		<img src="/img/IMG_a2.JPG" style="width:100%">
+		<img src="/img/IMG_a3.JPG" style="width:100%">
+		<img src="/img/IMG_a4.JPG" style="width:100%">
+		<img src="/img/IMG_a5.JPG" style="width:100%">
+		</div>
+		<div class="column">
+		<p> --------------</p>
+		<img src="/img/IMG_b1.JPG" style="width:100%">
+		<img src="/img/IMG_b2.JPG" style="width:100%">
+		<img src="/img/IMG_b3.JPG" style="width:100%">
+		<img src="/img/IMG_b4.JPG" style="width:100%">
+		<img src="/img/IMG_b5.JPG" style="width:100%">
+		</div>  
+		<div class="column">
+		<p> --------------</p>
+		<img src="/img/IMG_c1.JPG" style="width:100%">
+		<img src="/img/IMG_c2.JPG" style="width:100%">
+		<img src="/img/IMG_c3.JPG" style="width:100%">
+		<img src="/img/IMG_c4.JPG" style="width:100%">
+		<img src="/img/IMG_c5.JPG" style="width:100%">
+		</div>
+
+	</body>
+</html>
