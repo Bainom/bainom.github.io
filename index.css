@@ -25,6 +25,11 @@ pre {
 .name {
   margin-left: 1em;
 }
+
+.name a {
+	text-decoration: none;
+	}
+
 .links {
   display: flex;
   align-items: center;
@@ -48,11 +53,16 @@ a:hover {
   text-decoration: double underline;
 }
 
+.art-container {
+  z-index: 1;
+  position: relative;
+  margin: 1em;
+}
+
 .songs-container {
   z-index: 1;
   position: relative;
-  margin-left: 1em;
-  margin-top: 1em;
+  margin: 1em;
 }
 
 .song {
